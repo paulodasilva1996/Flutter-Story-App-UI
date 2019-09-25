@@ -32,7 +32,7 @@ class _MyAppState extends State<MyApp> {
       decoration: BoxDecoration(
           gradient: LinearGradient(
               colors: [
-            Color(0xFF1b1e44),
+            Color(0xFFFFFFFF),
             Color(0xFF2d3447),
           ],
               begin: Alignment.bottomCenter,
@@ -48,23 +48,7 @@ class _MyAppState extends State<MyApp> {
                     left: 12.0, right: 12.0, top: 30.0, bottom: 8.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: <Widget>[
-                    IconButton(
-                      icon: Icon(
-                        CustomIcons.menu,
-                        color: Colors.white,
-                        size: 30.0,
-                      ),
-                      onPressed: () {},
-                    ),
-                    IconButton(
-                      icon: Icon(
-                        Icons.search,
-                        color: Colors.white,
-                        size: 30.0,
-                      ),
-                      onPressed: () {},
-                    )
+                  children: <Widget>[                    
                   ],
                 ),
               ),
@@ -93,29 +77,7 @@ class _MyAppState extends State<MyApp> {
               ),
               Padding(
                 padding: const EdgeInsets.only(left: 20.0),
-                child: Row(
-                  children: <Widget>[
-                    Container(
-                      decoration: BoxDecoration(
-                        color: Color(0xFFff6e6e),
-                        borderRadius: BorderRadius.circular(20.0),
-                      ),
-                      child: Center(
-                        child: Padding(
-                          padding: EdgeInsets.symmetric(
-                              horizontal: 22.0, vertical: 6.0),
-                          child: Text("Animated",
-                              style: TextStyle(color: Colors.white)),
-                        ),
-                      ),
-                    ),
-                    SizedBox(
-                      width: 15.0,
-                    ),
-                    Text("25+ Stories",
-                        style: TextStyle(color: Colors.blueAccent))
-                  ],
-                ),
+                
               ),
               Stack(
                 children: <Widget>[
@@ -157,29 +119,6 @@ class _MyAppState extends State<MyApp> {
               ),
               Padding(
                 padding: const EdgeInsets.only(left: 20.0),
-                child: Row(
-                  children: <Widget>[
-                    Container(
-                      decoration: BoxDecoration(
-                        color: Colors.blueAccent,
-                        borderRadius: BorderRadius.circular(20.0),
-                      ),
-                      child: Center(
-                        child: Padding(
-                          padding: EdgeInsets.symmetric(
-                              horizontal: 22.0, vertical: 6.0),
-                          child: Text("Latest",
-                              style: TextStyle(color: Colors.white)),
-                        ),
-                      ),
-                    ),
-                    SizedBox(
-                      width: 15.0,
-                    ),
-                    Text("9+ Stories",
-                        style: TextStyle(color: Colors.blueAccent))
-                  ],
-                ),
               ),
               SizedBox(
                 height: 20.0,
@@ -281,15 +220,7 @@ class CardScrollWidget extends StatelessWidget {
                             Padding(
                               padding: const EdgeInsets.only(
                                   left: 12.0, bottom: 12.0),
-                              child: Container(
-                                padding: EdgeInsets.symmetric(
-                                    horizontal: 22.0, vertical: 6.0),
-                                decoration: BoxDecoration(
-                                    color: Colors.blueAccent,
-                                    borderRadius: BorderRadius.circular(20.0)),
-                                child: Text("Read Later",
-                                    style: TextStyle(color: Colors.white)),
-                              ),
+                              
                             )
                           ],
                         ),
